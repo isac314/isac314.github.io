@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Not found</title></head>
+<body style="font:16px/1.5 system-ui,sans-serif;text-align:center;padding:40px 16px">
+<p id="m">Page not found.</p>
+<script>
+// Old Setbook links, like /setbook/privacy.html, go to the same page at the new address.
+if (location.pathname.startsWith("/setbook")) {
+  document.getElementById("m").textContent = "Setbook has moved…";
+  location.replace("https://setbook-app.pages.dev" + location.pathname.replace(/^\/setbook/, "").replace(/\.html$/, "") + location.search + location.hash);
+}
+</script>
+</body>
+</html>

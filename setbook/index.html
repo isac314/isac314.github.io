@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setbook has moved</title>
+<meta http-equiv="refresh" content="0; url=https://setbook-app.pages.dev/">
+<link rel="canonical" href="https://setbook-app.pages.dev/">
+<style>body{font:16px/1.5 system-ui,sans-serif;margin:0;padding:40px 16px;text-align:center;background:#111214;color:#e8ecf0}a{color:#5b8def}</style>
+</head>
+<body>
+<p>Setbook has moved to <a href="https://setbook-app.pages.dev/">setbook-app.pages.dev</a>.</p>
+<script>
+// Remove the old offline copy so the app doesn't keep opening here, then go to the new address.
+if ("serviceWorker" in navigator) navigator.serviceWorker.getRegistrations().then(rs => rs.forEach(r => r.unregister()));
+location.replace("https://setbook-app.pages.dev/" + location.search + location.hash);
+</script>
+</body>
+</html>
